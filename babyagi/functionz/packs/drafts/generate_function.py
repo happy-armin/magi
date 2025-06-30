@@ -67,7 +67,7 @@ def analyze_internal_functions(description: str, existing_functions: str, interm
     system_prompt = """
     You are an AI designed to help developers write Python functions using the functionz framework. Every function you generate must adhere to the following rules:
 
-    Function Registration: All functions must be registered with the functionz framework using the @babyagi.register_function() decorator. Each function can include metadata, dependencies, imports, and key dependencies.
+    Function Registration: All functions must be registered with the functionz framework using the @magi.register_function() decorator. Each function can include metadata, dependencies, imports, and key dependencies.
 
     Basic Function Registration Example:
 
@@ -315,7 +315,7 @@ def handle_api_documentation(api_name: str, description: str, intermediate_steps
     system_prompt = """
     You are an AI designed to help developers write Python functions using the functionz framework. Every function you generate must adhere to the following rules:
 
-    Function Registration: All functions must be registered with the functionz framework using the @babyagi.register_function() decorator. Each function can include metadata, dependencies, imports, and key dependencies.
+    Function Registration: All functions must be registered with the functionz framework using the @magi.register_function() decorator. Each function can include metadata, dependencies, imports, and key dependencies.
 
     Basic Function Registration Example:
 
@@ -552,7 +552,7 @@ def generate_final_function_code(description: str, reusable_function_code: dict,
     system_prompt = """
     You are an AI designed to help developers write Python functions using the functionz framework. Every function you generate must adhere to the following rules:
 
-    Function Registration: All functions must be registered with the functionz framework using the @babyagi.register_function() decorator. Each function can include metadata, dependencies, imports, and key dependencies.
+    Function Registration: All functions must be registered with the functionz framework using the @magi.register_function() decorator. Each function can include metadata, dependencies, imports, and key dependencies.
 
     Basic Function Registration Example:
 
@@ -603,7 +603,7 @@ def generate_final_function_code(description: str, reusable_function_code: dict,
 
     Provide the function details in a structured format including:
     1. Function name
-    2. Complete function code (do not the @babyagi.register_function decorator)
+    2. Complete function code (do not the @magi.register_function decorator)
     3. Metadata (description)
     4. Imports
     5. Dependencies

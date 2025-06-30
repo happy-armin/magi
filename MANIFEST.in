@@ -3,7 +3,7 @@ include README.md
 include LICENSE
 
 # Include all package directories and their contents
-recursive-include babyagi *
+recursive-include magi *
 
 # Include examples
 recursive-include examples *

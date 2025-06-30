@@ -1,6 +1,6 @@
-import babyagi
+import magi
 
-@babyagi.register_function(
+@magi.register_function(
     metadata={"description": "Executes AI-generated Python code in a secure E2B sandbox."},
     imports=["e2b_code_interpreter"],
     key_dependencies=["e2b_api_key"]
@@ -31,7 +31,7 @@ def execute_code_in_sandbox(code: str):
 
 # Function 2: Chat with LLM (OpenAI) and parse response to execute in sandbox
 
-@babyagi.register_function(
+@magi.register_function(
     metadata={"description": "Calls the OpenAI API (gpt-3.5-turbo) to generate code and execute it in an E2B sandbox."},
     imports=["litellm", "os"],
     key_dependencies=["openai_api_key"],
@@ -63,7 +63,7 @@ def chat_with_llm_and_execute(user_message: str):
 
 # Function 3: Save generated charts
 
-@babyagi.register_function(
+@magi.register_function(
     metadata={"description": "Saves a base64-encoded PNG chart to a file."},
     imports=["base64"],
 )
@@ -86,7 +86,7 @@ def save_chart(base64_png: str, filename: str = "chart.png"):
 
 # Function 4: Execute main flow (chat with LLM, run code, save chart if exists)
 
-@babyagi.register_function(
+@magi.register_function(
     metadata={"description": "Main function to prompt LLM, execute code in E2B, and save any generated charts."},
     dependencies=["chat_with_llm_and_execute", "save_chart"]
 )

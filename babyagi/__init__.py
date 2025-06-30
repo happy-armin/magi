@@ -1,4 +1,4 @@
-# babyagi/__init__.py
+# magi/__init__.py
 
 from flask import Flask, g
 from .functionz.core.framework import Functionz
@@ -44,7 +44,7 @@ def create_app(dashboard_route='/dashboard'):
 
     return app
 
-# Function to register functions using the babyagi framework
+# Function to register functions using the magi framework
 def register_function(*args, **kwargs):
     def wrapper(func):
         try:
@@ -81,7 +81,7 @@ def load_functions(pack_name_or_path):
 
 def use_blueprints(app, dashboard_route='/dashboard'):
     """
-    Registers the babyagi blueprints with the provided Flask app.
+    Registers the magi blueprints with the provided Flask app.
 
     Args:
         app (Flask): The Flask application instance.
@@ -111,7 +111,7 @@ def use_blueprints(app, dashboard_route='/dashboard'):
 
 def __getattr__(name):
     """
-    Dynamic attribute access for the babyagi module.
+    Dynamic attribute access for the magi module.
     If a function with the given name exists in the database,
     return a callable that executes the function via the executor.
     """
@@ -124,7 +124,7 @@ def __getattr__(name):
     raise AttributeError(f"module '{__name__}' has no attribute '{name}'")
 
 
-# Auto-load default function packs when babyagi is imported
+# Auto-load default function packs when magi is imported
 try:
     print("Attempting to load default function packs...")
     # Uncomment if needed
@@ -136,4 +136,4 @@ except Exception as e:
     print(f"Error loading default function packs: {e}")
     traceback.print_exc()
 
-print("babyagi/__init__.py loaded")
+print("magi/__init__.py loaded")

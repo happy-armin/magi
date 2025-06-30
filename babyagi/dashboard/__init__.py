@@ -1,4 +1,4 @@
-# babyagi/dashboard/__init__.py
+# magi/dashboard/__init__.py
 
 from flask import Blueprint, render_template, g, send_from_directory
 import logging

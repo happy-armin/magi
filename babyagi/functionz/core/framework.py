@@ -91,9 +91,9 @@ class Functionz:
 
         original_sys_path = sys.path[:]
         try:
-            babyagi_root = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-            if babyagi_root not in sys.path:
-                sys.path.insert(0, babyagi_root)
+            magi_root = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+            if magi_root not in sys.path:
+                sys.path.insert(0, magi_root)
 
             spec.loader.exec_module(module)
             logger.info(f"Loaded module '{module_name}' from '{path}'")

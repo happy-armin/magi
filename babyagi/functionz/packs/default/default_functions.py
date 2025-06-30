@@ -1,6 +1,6 @@
 # packs/default_functions.py
 
-from babyagi.functionz.core.framework import func
+from magi.functionz.core.framework import func
 from datetime import datetime
 from typing import Optional, Dict, Any, List
 

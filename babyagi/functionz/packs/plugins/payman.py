@@ -1,4 +1,4 @@
-from babyagi.functionz.core.framework import func
+from magi.functionz.core.framework import func
 
 # Store API keys (both test and real) from Replit secrets into the function database
 @func.register_function(

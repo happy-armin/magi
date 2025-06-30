@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "babyagi"
+name = "magi"
 version = "0.0.8"
 description = ""
 authors = ["Your Name <you@example.com>"]

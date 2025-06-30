@@ -1,4 +1,4 @@
-# babyagi/api/__init__.py
+# magi/api/__init__.py
 
 from flask import Blueprint, jsonify, request, g
 from datetime import datetime

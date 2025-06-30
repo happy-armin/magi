@@ -1,4 +1,4 @@
-from babyagi.functionz.core.framework import func
+from magi.functionz.core.framework import func
 
 @func.register_function(
   metadata={"description": "Generate parameters for Augie creation using GPT."},

@@ -13,14 +13,14 @@ def parse_requirements(filename):
     return [line.strip() for line in lines if line.strip() and not line.startswith("#")]
 
 setup(
-    name="babyagi",  # Ensure this is the desired package name
+    name="magi",  # Ensure this is the desired package name
     version="0.1.2",  # Update this version appropriately
     author="Yohei Nakajima",
-    author_email="babyagi@untapped.vc",
+    author_email="magi@untapped.vc",
     description="An experimental prototype framework for building self building autonomous agents.",
     long_description=  long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yoheinakajima/babyagi",  # Update if necessary
+    url="https://github.com/happy-armin/magi",  # Update if necessary
     packages=find_packages(),
     include_package_data=True,  # Include package data as specified in MANIFEST.in
     classifiers=[
@@ -32,11 +32,11 @@ setup(
     install_requires=parse_requirements("requirements.txt"),
     entry_points={
         'console_scripts': [
-            'babyagi=babyagi.main:main',  # Example entry point
+            'magi=magi.main:main',  # Example entry point
         ],
     },
-    keywords="AGI, AI, Framework, Baby AGI",
+    keywords="AGI, AI, Framework, MMM AGI",
     project_urls={  # Optional
-        "Author": "https://x.com/yoheinakajima",
+        "Author": "https://x.com/zbearcss",
     },
 )
